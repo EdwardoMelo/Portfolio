@@ -39,6 +39,6 @@ const Skills = () => {
 
 export default AppWrapp(
   MotionWrap(Skills, 'app__skills'),
-  'skills',
+  'habilidades',
   'app__whitebg',
 );

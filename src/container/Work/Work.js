@@ -21,7 +21,7 @@ const Work = () => {
   return (
     <>
     <h2 className='head-text'> 
-    <span> Projects</span>  
+    <span> Projetos</span>  
     </h2>
     
   
@@ -71,11 +71,11 @@ const Work = () => {
             </div>
           </div>
         </div>
-      )): <h1> No Projects Yet</h1>}
+      )): <h1> Sem projetos ainda</h1>}
 
     </motion.div>
     </>
   )
 }
 
-export default AppWrapp(Work, 'work');
+export default AppWrapp(Work, 'projetos');

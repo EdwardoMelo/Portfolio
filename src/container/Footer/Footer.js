@@ -33,7 +33,7 @@ const Footer = () => {
   }
   return (
     <>
-    <h2 className="head-text">Talk to me!</h2>
+    <h2 className="head-text">Fale comigo!</h2>
     <div className="app__footer-cards" >
         <div className='app__footer-card'>
             <img src={images.email} alt="email"/>
@@ -49,19 +49,19 @@ const Footer = () => {
 
     <div className='app__footer-form app__flex'>
         <div className='app__flex'>
-              <input className='p-text' name='name' type="text" placeholder="Your Name" value={name} onChange={handleChangeInput}/>
+              <input className='p-text' name='name' type="text" placeholder="Digite seu Nome" value={name} onChange={handleChangeInput}/>
         </div>
         <div className='app__flex'>
-              <input className='p-text' name='email' type="email" placeholder="Your Email" value={email} onChange={handleChangeInput}/> 
+              <input className='p-text' name='email' type="email" placeholder="Seu email" value={email} onChange={handleChangeInput}/> 
         </div>
         <div>
-          <textarea className='p-text'placeholder='Your Message' value={message} onChange={handleChangeInput} name="message"/>
+          <textarea className='p-text'placeholder='Mensagem...' value={message} onChange={handleChangeInput} name="Mensagem"/>
         </div>
-        <button type='button' className='p-text' onClick={handleSubmit}>{Loading ? 'Sending': 'Send Message'}</button>
+        <button type='button' className='p-text' onClick={handleSubmit}>{Loading ? 'Enviando': 'Enviar Mensagem'}</button>
     </div>
     : <div>
         <h3 className='head-text'>
-            Thank you for getting in touch!
+            Obrigado por entrar em contato!
         </h3>
       </div>}
 
@@ -71,6 +71,6 @@ const Footer = () => {
 
 export default AppWrapp (
   MotionWrap(Footer, 'app__footer'),
-  'contact',
+  'contato',
   'app__whitebg',
 );;

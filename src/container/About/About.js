@@ -18,10 +18,10 @@ const About = () => {
   return (
     <>
     <h2 className='head-text'> 
-    About
-    <span> Me</span>
+    Sobre
+    <span> Mim</span>
     </h2>
-    <p className='aboutMeText'>I'm a 21-year-old web developer passionate about creating stunning and functional websites. I love turning ideas into reality using technology. The fundamentals of a good project in my opinion are: </p>
+    <p className='aboutMeText'>Sou graduando em Análise e Desenvolvimento de Sistemas e gosto de criar interfaces intuitivas e modernas, bem como implementar a proposta de Design. No Backend, sei implementar regras de negócio e funcionalidades complexas.</p>
 
     <div className='app__profiles'>
       { abouts.map((about, index) =>( 
@@ -42,4 +42,4 @@ const About = () => {
   )
 }
 
-export default AppWrapp(About, 'about');
+export default AppWrapp(About, 'sobre');

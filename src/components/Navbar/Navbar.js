@@ -12,7 +12,7 @@ const Navbar = () => {
             <h1 className='gradient-text'>EDUARDO MELO</h1>
         </div>
         <ul className='app__navbar-links'>
-            { ['home', 'about', 'contact', 'work', 'skills'].map((item) =>(
+            { ['home', 'sobre', 'contato', 'projetos', 'habilidades'].map((item) =>(
                 <li className='app__flex p-text' key={`link-${item}`}>
                     <div />
                     <a href={`#${item}`}>{item}</a>
@@ -29,7 +29,7 @@ const Navbar = () => {
                           >
                           <HiX onClick={() => setToggle(false)} />
                           <ul>
-                          {['home', 'about', 'contact', 'work', 'skills'].map((item) => (
+                          {['home', 'sobre', 'contato', 'projetos', 'habilidades'].map((item) => (
                               <li className='app__flex p-text' key={item}>
                                   <a href={`#${item}`}>{item}</a>
                               </li>
