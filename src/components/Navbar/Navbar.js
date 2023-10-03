@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import  images  from '../../constants/images.js';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion'
 import './Navbar.scss'
@@ -9,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
         <div className='app__navbar-logo'>
-            <h1 className='gradient-text'>EDUARDO MELO</h1>
+            <h1 className='gradient-text'>{"< >"}</h1>
         </div>
         <ul className='app__navbar-links'>
             { ['home', 'sobre', 'contato', 'projetos', 'habilidades'].map((item) =>(
