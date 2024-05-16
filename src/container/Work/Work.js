@@ -21,7 +21,7 @@ const Work = () => {
   return (
     <>
     <h2 className='head-text'> 
-    <span> Projetos</span>  
+    <span>work</span>  
     </h2>
     
   
@@ -39,7 +39,7 @@ const Work = () => {
               whileHover={{opacity: [0,1]}}
               transition={{duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5}}
               className="app__work-hover app__flex">
-                <a href={work.projectLink} target="_blanck" rel="norefffer">
+                { work.projectLink &&  <a href={work.projectLink} target="_blanck" rel="norefffer">
                   <motion.div
                    whileInView={{scale: [0,1]}}
                    whileHover={{scale: [1,0.9]}}
@@ -47,8 +47,8 @@ const Work = () => {
                    className="app__flex">
                     <AiFillEye />
                   </motion.div>
-                </a>
-                <a href={work.codeLink} target="_blanck" rel="norefffer">
+                </a>}
+                { work.codeLink &&  <a href={work.codeLink} target="_blanck" rel="norefffer">
                   <motion.div
                    whileInView={{scale: [0,1]}}
                    whileHover={{scale: [1,0.9]}}
@@ -56,8 +56,7 @@ const Work = () => {
                    className="app__flex">
                     <AiFillGithub />
                   </motion.div>
-
-                </a>
+                </a>}
               </motion.div>
           </div>
           <div className='app__work-content app__flex'>
@@ -71,11 +70,11 @@ const Work = () => {
             </div>
           </div>
         </div>
-      )): <h1> Sem projetos ainda</h1>}
+      )): <h1> No projects yet</h1>}
 
     </motion.div>
     </>
   )
 }
 
-export default AppWrapp(Work, 'projetos');
+export default AppWrapp(Work, 'work');

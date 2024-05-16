@@ -11,7 +11,7 @@ const Navbar = () => {
             <h1 className='gradient-text'>{"< >"}</h1>
         </div>
         <ul className='app__navbar-links'>
-            { ['home', 'sobre', 'contato', 'projetos', 'habilidades'].map((item) =>(
+            { ['home', 'about', 'contact', 'work', 'skills'].map((item) =>(
                 <li className='app__flex p-text' key={`link-${item}`}>
                     <div />
                     <a href={`#${item}`}>{item}</a>
