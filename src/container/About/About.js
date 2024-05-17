@@ -34,7 +34,7 @@ const About = () => {
         >
           <img src={urlFor(about.imgUrl)} alt={about.title} />
           <h2 className="bold-text">{about.title}</h2>
-          <p className='p-text' style={{marginTop: 10}}>{about.description}</p>
+          <p className='p-text' style={{marginTop: 10, fontSize:'1rem'}}>{about.description}</p>
         </motion.div>
       ))}
     </div>
